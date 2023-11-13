@@ -1,0 +1,42 @@
+how pipeline are created ?
+under definition select pipeline script, select template hellow world you will get structure
+===>>> agent where you need to mention define where your pipleine will run
+===>>> stages where you will mention task and inside step define your tsk
+ from stage(hello till thrid last curly bracket copy and paste bewlo and more stagessss)
+
+ First stage always is git checkout and under steps you need to scroll belwo you will see pipeline synyax click open new tab, search git select and provide git repository url and genereate script
+ copy and paste in under steps remore echo instead and got paste url
+
+ Second stage compile under steps sh "mvn complie"
+
+ thrid stage test
+
+ sh mvn test
+
+ fouth package 
+
+ sh mvn package
+
+ five install
+
+ sh mvn install 
+ save
+
+
+ Suppose you want to use specific version of java or mavan then in pipeline under agent you need to mention 
+ tools{
+     jdk 'jdk11'
+     maven 'maven3'
+ }
+apply save
+
+
+dpne build is successful
+
+Replay is vey impotant in case if you want to see pipleine as a code. you see code through replay option 
+Now suppose you want to run 3 build then click previus 2 build c;icl  on Replay spmetimes you dont have access to github application repo 
+
+===>> Jenkin file is also known as a pipeline as a code because in this file yuo need to mention your pipleline code inside github because when we automate it will trigger the job through github 
+ So instead we need to choose pipeline script from SCM, url of githun jenkinfile...
+
+ ==>> MultiBranch pipleline means If specific branch does not have Jenkinfile that branch will not be trigger. only job will be created with jenkinfile. Multibranch pipeline so that we can work with multiple version of our source code within causing any conflict with different of source code that exist on other braches 

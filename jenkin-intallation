@@ -1,0 +1,51 @@
+creat ec2 connect with terminal, open port 80, 22, 443 custom tcp 8000 to 9000. pre-requiste is java has to be install
+insall jenkin, so there is only one command in that you install maven and jdk together.
+ =====>>> sudo apt install maven -y
+
+ java --version 
+
+ mvn -v
+
+ go to offical website of jenkin, linux, debian, long term support release, copy link and paste then run
+
+ ======>>> sudo apt-get install jenkins -y
+
+ systemctl enable jenkins
+
+ systemctl start jenkins
+
+
+ systemctl status jenkins
+
+copy public ip and paste in browse IP:8080
+
+copy path, goto terminal switch to root 
+
+cat paste path, you will see password.
+
+Always got with suggested plugins, create admin user, DONE
+
+goto manage jenkin, its a setting of jenkin===> setting any system  configuration eg sonarcude...in short if you need to add plugin we will integrat here
+
+
+==>> plugins are you can install plugins here avaiable plugins eg if you want to add jdk different version just serach it and check mark again for sonarcuebe search checkmark and install
+
+=====>>> Advance plugins: lets ssay if you cant download plugin from available plugin then you need to do it manually eg extension is hpi so you need to search kubernetes hei, under release you can see direct 
+link it will doenload the plugin. then goto advance setting deploy plugin and upload so your plugin is intsalled now...
+
+Restart if necessary through by going to plugin 
+
+====>>> Under tool you can configure plugin that you have installed
+
+====>>> under nodes you can jenkin slave server or machine
+
+===>>> Under secuirty, credential for eg github credential you need to provide here under global
+
+in security section you can decide which user have what kind og access
+
+under users: you can create user...
+
+
+
+
+
