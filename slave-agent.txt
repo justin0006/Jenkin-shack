@@ -1,0 +1,7 @@
+VM can ne added as a jenkin slave or agent
+we use agent where we can execute pipeline, job etc.
+create a vm as a slave: pre requist is jdk should be install: sudo apt update
+sudo apt install openjdk-11-jre-headless -y
+
+Now we need to connect to Jenkin server to salve. as agent so whatever build we want we can run on salve machine
+
