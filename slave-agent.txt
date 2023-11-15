@@ -4,4 +4,22 @@ create a vm as a slave: pre requist is jdk should be install: sudo apt update
 sudo apt install openjdk-11-jre-headless -y
 
 Now we need to connect to Jenkin server to salve. as agent so whatever build we want we can run on salve machine
+In order to connection both machine we need to make folder in slave with root execition permission. Generate ssh key
+ssh-keygen, enter enter done...cd /root/.ssh
+you will private, pub key authorized kay....we need to add public content inside authorized key just paste it below ecs and save
+
+Goto jenkin dashboard , manage jenkin==>node==>add node===slave 1 named it...number of exe meand job runs for 3 times...remote root dir===you need give path of where slace machine is store eg /home/ubuntu/slave
+usage: only build with label exp with node
+label: eg vm1....slave ec2 ins
+lauch method ssh.......host: is ip address
+credential: you need to go to maange jenkins credential kind ssh with private key then add new credential user root, checkmark private key and you need to paste your private key here i.e id-rsa
+
+goback to 14 step and add credential select root
+host key: non verified save done 
+
+
+
+
+
+
 
